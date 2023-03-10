@@ -21,11 +21,11 @@ const CONFIG = {
   mode: 'development',
 
   entry: {
-    app: './src/app.js'
+    app: './src/app.js',
   },
   devServer: {
-    contentBase: path.join(__dirname, 'src')
-  }
+    static: path.join(__dirname, 'src'),
+  },
 };
 
 module.exports = CONFIG;
